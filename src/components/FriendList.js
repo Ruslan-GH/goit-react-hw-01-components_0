@@ -1,9 +1,11 @@
 import FriendListItem from './FriendListItem';
 import propTypes from 'prop-types';
+import s from './FriendListItem.module.css';
 
 const FriendList = ({ friends }) => {
+  const isOnline = true;
   return (
-    <ul class="friend-list">
+    <ul className={s.friendList}>
       {friends.map(friend => (
         <FriendListItem
           key={friend.id}
