@@ -3,7 +3,6 @@ import propTypes from 'prop-types';
 import s from './FriendListItem.module.css';
 
 const FriendList = ({ friends }) => {
-  const isOnline = true;
   return (
     <ul className={s.friendList}>
       {friends.map(friend => (
@@ -25,13 +24,3 @@ FriendList.propTypes = {
 };
 
 export default FriendList;
-
-//  {friends.map(friend => (
-//     <li key={friend.id}>
-//         <FriendListItem
-//             avatar={friend.avatar}
-//             name={friend.name}
-//             isOnline={friend.isOnline}
-//         />
-//     </li>
-// ))

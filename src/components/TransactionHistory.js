@@ -26,4 +26,15 @@ const TransactionHistory = ({ items }) => {
   );
 };
 
+TransactionHistory.propTypes = {
+  friends: propTypes.arrayOf(
+    propTypes.shape({
+      id: propTypes.string.isRequired,
+      type: propTypes.string.isRequired,
+      amount: propTypes.number.isRequired,
+      currency: propTypes.string.isRequired,
+    }),
+  ),
+};
+
 export default TransactionHistory;

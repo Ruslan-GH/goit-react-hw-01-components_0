@@ -11,8 +11,6 @@ import TransactionHistory from './components/TransactionHistory';
 import transactions from './transaction-history/transactions.json';
 
 export default function App() {
-  const isOnline = false;
-
   return (
     <div>
       <Profile
